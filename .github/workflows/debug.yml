@@ -1,4 +1,7 @@
-on:\n  workflow_dispatch:\n  push:\n    branches: [main]
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
 name: Build Bytes Music APK
 
 jobs:
