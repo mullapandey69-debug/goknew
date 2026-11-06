@@ -44,7 +44,7 @@ class AboutPage extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
-                    'Musify',
+                    'Bytes Music',
                     style: TextStyle(
                       color: Theme.of(context).colorScheme.primary,
                       fontSize: 36,
@@ -123,7 +123,7 @@ class AboutPage extends StatelessWidget {
                           ),
                           const SizedBox(height: 2),
                           Text(
-                            'WEB & APP Developer',
+                            'Original Musify project author',
                             style: TextStyle(
                               color: Theme.of(context)
                                   .colorScheme
