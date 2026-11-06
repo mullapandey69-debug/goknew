@@ -37,12 +37,12 @@ import 'package:musify/utilities/url_launcher.dart';
 import 'package:musify/widgets/auto_format_text.dart';
 
 const String checkUrl =
-    'https://raw.githubusercontent.com/gokadzev/Musify/update/check.json';
+    'https://raw.githubusercontent.com/mullapandey69-debug/goknew/main/update/check.json';
 const String releasesUrl =
-    'https://api.github.com/repos/gokadzev/Musify/releases/latest';
+    'https://api.github.com/repos/mullapandey69-debug/goknew/releases/latest';
 const String downloadUrlKey = 'url';
 const String downloadUrlArm64Key = 'arm64url';
-const String downloadFilename = 'Musify.apk';
+const String downloadFilename = 'BytesMusic.apk';
 
 Future<void> checkAppUpdates() async {
   // Update distribution targets Android APK builds only.
