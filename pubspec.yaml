@@ -1,11 +1,11 @@
 name: musify
-description: Music Streaming app made in Flutter!
-homepage: https://github.com/gokadzev/Musify
-repository: https://github.com/gokadzev/Musify
-issue_tracker: https://github.com/gokadzev/Musify/issues
+description: Bytes Music - a community-maintained music player fork.
+homepage: https://github.com/mullapandey69-debug/goknew
+repository: https://github.com/mullapandey69-debug/goknew
+issue_tracker: https://github.com/mullapandey69-debug/goknew/issues
 
 publish_to: 'none'
-version: 10.6.0+186 # run update.sh after changing the version
+version: 10.6.0+186 # based on upstream version; retain version lineage
 
 environment:
   sdk: '>=3.13.0 <4.0.0'
@@ -47,20 +47,17 @@ dependencies:
     path: ./packages/youtube_explode_dart
   youtube_music_explode_dart:
     path: ./packages/youtube_music_explode_dart
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
   just_audio_platform_interface: ^4.6.0
   media_kit: ^1.2.6
-
-  # flutter_lints: ^2.0.0
 
 flutter:
   generate: true
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
   assets:
     - assets/licenses/
     - assets/icons/musify_icon.png
