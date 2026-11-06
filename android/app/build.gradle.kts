@@ -23,7 +23,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "com.gokadzev.musify"
+    namespace = "com.bytesmusic.app"
     compileSdk = 36
     ndkVersion = "28.2.13676358"
 
@@ -48,7 +48,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.gokadzev.musify"
+        applicationId = "com.bytesmusic.app"
         minSdk = 24
         targetSdk = 36
         versionCode = flutter.versionCode
@@ -70,10 +70,7 @@ android {
 
     signingConfigs {
         create("release") {
-            // From decoded key
             storeFile = file("key.jks")
-
-            // From key.properties
             keyAlias = keystoreProperties["keyAlias"] as String?
             keyPassword = keystoreProperties["keyPassword"] as String?
             storePassword = keystoreProperties["storePassword"] as String?
@@ -85,9 +82,7 @@ android {
     }
 
     dependenciesInfo {
-        // Disables dependency metadata when building APKs.
         includeInApk = false
-        // Disables dependency metadata when building Android App Bundles.
         includeInBundle = false
     }
 
