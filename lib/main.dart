@@ -304,8 +304,8 @@ Future<void> initialisation() async {
       audioHandler = await AudioService.init(
         builder: MusifyAudioHandler.new,
         config: const AudioServiceConfig(
-          androidNotificationChannelId: 'com.gokadzev.musify',
-          androidNotificationChannelName: 'Musify',
+          androidNotificationChannelId: 'com.bytesmusic.app',
+          androidNotificationChannelName: 'Bytes Music',
           androidNotificationIcon: 'drawable/ic_launcher_foreground',
           androidShowNotificationBadge: true,
           androidStopForegroundOnPause: false,
@@ -324,7 +324,7 @@ Future<void> initialisation() async {
       );
     } else {
       // Use the desktop audio backend without mobile service plugins.
-      JustAudioMediaKit.title = 'Musify';
+      JustAudioMediaKit.title = 'Bytes Music';
       JustAudioMediaKit.ensureInitialized();
       audioHandler = MusifyAudioHandler();
     }
@@ -427,7 +427,7 @@ Future<void> initialisation() async {
 }
 
 void handleIncomingLink(Uri? uri) async {
-  if (uri == null || uri.scheme != 'musify' || uri.host != 'playlist') return;
+  if (uri == null || uri.scheme != 'bytesmusic' || uri.host != 'playlist') return;
 
   if (uri.pathSegments.length < 2 || uri.pathSegments[0] != 'custom') return;
 
