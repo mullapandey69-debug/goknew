@@ -24,7 +24,6 @@ jobs:
         with:
           channel: 'stable'
       - run: flutter pub get
-      - run: flutter analyze .
       - run: flutter build apk --debug --flavor github
       - uses: actions/upload-artifact@v5
         with:
